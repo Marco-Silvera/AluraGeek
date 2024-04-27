@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #5D04D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    border-bottom: 5px #E5E5E5 solid;
+}
+
+.hearts {
+    width: 100px;
+}
+
+header h2 {
+    font-size: 24px;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.agregarProducto {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    padding: 40px;
+    align-self: center;
+}
+
+.agregarProducto h3 {
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form input {
+    border: 3px #03318C solid;
+    color: #03318C;
+    border-radius: 30px;
+    padding: 15px;
+    outline: none;
+}
+
+form input::placeholder {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color: #03318C;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+}
+
+.botones button {
+    padding: 10px 20px;
+    border: 3px solid #03318C;
+    border-radius: 15px;
+    width: 100%;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botones button:nth-child(1) {
+    color: white;
+    background-color: #03318C;
+}
+
+.botones button:nth-child(2) {
+    color: #03318C;
+    background-color: transparent;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 0px;
+
+    overflow-x: auto;
+}
+
+.productos-titulo {
+    text-align: center;
+}
+
+.lista-productos {
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.lista-productos::after {
+    content: "";
+    /* Agrega un pseudo-elemento vacío */
+    flex-shrink: 0;
+    /* Evita que el pseudo-elemento afecte el tamaño de los productos */
+    width: 6px;
+    /* Ancho del espacio adicional (igual al padding-right) */
+}
+
+.productos-item {
+    width: 180px;
+    padding: 10px;
+    border: 3px black solid;
+    border-radius: 10px;
+    background-color: #5D04D9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    flex: 0 0 auto;
+}
+
+.productos-img {
+    border: 3px black solid;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.productos-nombre {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.productos-precio {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.productos-item div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trash {
+    height: 30px;
+}
+
+footer {
+    background-color: #5D04D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+footer div h2 {
+    font-size: 24px;
+    color: white;
+}
+
+footer h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: white;
+}
