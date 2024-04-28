@@ -2,7 +2,7 @@ import { conexionAPI } from './conexionAPI.js';
 
 const lista = document.querySelector('[data-lista]')
 
-function crearCard(id, nombre, precio, imagen) {
+function crearCard(nombre, precio, imagen) {
     const producto = document.createElement('article');
     producto.className = 'productos-item';
     producto.innerHTML = `<img class="productos-img"
