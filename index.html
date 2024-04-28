@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/mostrarProductos.js" defer type="module"></script>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
             </h3>
 
             <form action="">
-                <input type="text" placeholder="nombre...">
-                <input type="number" placeholder="precio...">
+                <input type="text" placeholder="nombre..." minlength="3" maxlength="30">
+                <input type="number" placeholder="precio..." min="1" max="30">
                 <input type="text" placeholder="imagen...">
             </form>
 
@@ -44,73 +45,9 @@
                 Mis productos:
             </h3>
             <div class="contenedor-productos">
-            <section class="lista-productos">
-                <article class="productos-item">
-                    <img class="productos-img" src="img/taza-Stormtrooper.png" alt="Producto 1">
-                    <h4 class="productos-nombre">
-                        Producto 1
-                    </h4>
-                    <div>
-                        <h5 class="productos-precio">
-                            $ 60,00
-                        </h5>
-                        <img class="trash" src="img/trash.svg" alt="Tacho de basura">
-                    </div>
-                </article>
-
-                <article class="productos-item">
-                    <img class="productos-img" src="img/taza-Stormtrooper.png" alt="Producto 1">
-                    <h4 class="productos-nombre">
-                        Producto 1
-                    </h4>
-                    <div>
-                        <h5 class="productos-precio">
-                            $ 60,00
-                        </h5>
-                        <img class="trash" src="img/trash.svg" alt="Tacho de basura">
-                    </div>
-                </article>
-
-                <article class="productos-item">
-                    <img class="productos-img" src="img/taza-Stormtrooper.png" alt="Producto 1">
-                    <h4 class="productos-nombre">
-                        Producto 1
-                    </h4>
-                    <div>
-                        <h5 class="productos-precio">
-                            $ 60,00
-                        </h5>
-                        <img class="trash" src="img/trash.svg" alt="Tacho de basura">
-                    </div>
-                </article>
-
-                <article class="productos-item">
-                    <img class="productos-img" src="img/taza-Stormtrooper.png" alt="Producto 1">
-                    <h4 class="productos-nombre">
-                        Producto 1
-                    </h4>
-                    <div>
-                        <h5 class="productos-precio">
-                            $ 60,00
-                        </h5>
-                        <img class="trash" src="img/trash.svg" alt="Tacho de basura">
-                    </div>
-                </article>
-
-                <article class="productos-item">
-                    <img class="productos-img" src="img/taza-Stormtrooper.png" alt="Producto 1">
-                    <h4 class="productos-nombre">
-                        Producto 1
-                    </h4>
-                    <div>
-                        <h5 class="productos-precio">
-                            $ 60,00
-                        </h5>
-                        <img class="trash" src="img/trash.svg" alt="Tacho de basura">
-                    </div>
-                </article>
-            </section>
-        </div>
+                <section class="lista-productos" data-lista>
+                </section>
+            </div>
         </section>
     </main>
 
