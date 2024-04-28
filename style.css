@@ -77,7 +77,8 @@ form input::placeholder {
     gap: 20px;
 }
 
-.botones button {
+.botones button,
+.botones input {
     padding: 10px 20px;
     border: 3px solid #03318C;
     border-radius: 15px;
@@ -85,16 +86,13 @@ form input::placeholder {
     font-family: "IBM Plex Mono", monospace;
     font-size: 20px;
     cursor: pointer;
-}
-
-.botones button:nth-child(1) {
-    color: white;
-    background-color: #03318C;
-}
-
-.botones button:nth-child(2) {
     color: #03318C;
     background-color: transparent;
+}
+
+.botones input {
+    color: white;
+    background-color: #03318C;
 }
 
 .contenedor-productos {
@@ -150,6 +148,10 @@ form input::placeholder {
     font-weight: 300;
 }
 
+.productos-item div {
+    margin-top: auto;
+}
+
 .productos-precio {
     font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
@@ -164,6 +166,7 @@ form input::placeholder {
 
 .trash {
     height: 30px;
+    cursor: pointer;
 }
 
 footer {

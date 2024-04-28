@@ -7,6 +7,7 @@
     <title>Alura Geek</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/mostrarProductos.js" defer type="module"></script>
+    <script src="js/crearProducto.js" defer type="module"></script>
 </head>
 
 <body>
@@ -24,20 +25,15 @@
                 Agregar producto:
             </h3>
 
-            <form action="">
-                <input type="text" placeholder="nombre..." minlength="3" maxlength="30">
-                <input type="number" placeholder="precio..." min="1" max="30">
-                <input type="text" placeholder="imagen...">
+            <form action="" data-formulario>
+                <input type="text" placeholder="nombre..." minlength="3" maxlength="30" required data-nombre>
+                <input type="number" placeholder="precio..." min="1" maxlength="7" required data-precio>
+                <input type="text" placeholder="imagen..." required data-imagen>
+                <div class="botones">
+                    <input type="submit" value="Enviar">
+                    <button type="button" class="limpiar-input">Limpiar</button>
+                </div>
             </form>
-
-            <div class="botones">
-                <button>
-                    Enviar
-                </button>
-                <button>
-                    Limpiar
-                </button>
-            </div>
         </section>
 
         <section class="productos">
