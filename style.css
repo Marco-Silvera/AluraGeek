@@ -95,6 +95,10 @@ form input::placeholder {
     background-color: #03318C;
 }
 
+.productos {
+    padding: 40px;
+}
+
 .contenedor-productos {
     display: flex;
     flex-direction: column;
