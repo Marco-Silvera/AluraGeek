@@ -12,6 +12,9 @@ async function crearProducto(evento) {
     const imagen = document.querySelector('[data-imagen]').value;
 
     await conexionAPI.enviarProducto(nombre, precio, imagen)
+
+    await listarProductos();
+
     console.log("info enviada");
 }
 
