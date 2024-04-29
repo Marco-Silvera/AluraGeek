@@ -125,6 +125,7 @@ form input::placeholder {
 
 .productos-item {
     width: 180px;
+    height: 311px;
     padding: 10px;
     border: 3px black solid;
     border-radius: 10px;
@@ -195,4 +196,45 @@ footer h3 {
     text-transform: uppercase;
     font-weight: 300;
     color: white;
+}
+
+@media (min-width: 640px) {
+
+    .agregarProducto form input,
+    .agregarProducto form input::placeholder {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    main {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .lista-productos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .lista-productos::after {
+        display: none;
+    }
+
+    .productos-nombre,
+    .productos-precio {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    main {
+        justify-content: center;
+        gap: 350px;
+    }
+
 }

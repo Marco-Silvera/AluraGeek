@@ -1,10 +1,40 @@
 {
     "productos": [
         {
-            "id": 1,
-            "nombre": "Taza de Sormtrooper",
-            "precio": 60,
-            "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/12684746-1000-1000/imageUrl_4.jpg?v=638053550716400000"
+            "nombre": "Karambit Gamma Doppler",
+            "precio": "6000",
+            "imagen": "https://esports.as.com/2020/02/11/rocket-league/Karambit_1327077300_340674_1024x1024.jpg",
+            "id": 1
+        },
+        {
+            "nombre": "M9-Bayoneta",
+            "precio": "2000",
+            "imagen": "https://m.media-amazon.com/images/I/710IAfSsxrL._AC_SL1100_.jpg",
+            "id": 2
+        },
+        {
+            "nombre": "Huntsman",
+            "precio": "3000",
+            "imagen": "https://esports.as.com/2020/02/11/rocket-league/Huntsman_1327077305_340754_1024x1024.jpg",
+            "id": 4
+        },
+        {
+            "nombre": "Karambit Ruby",
+            "precio": "6000",
+            "imagen": "https://cyberpiggy.com/image/cache/catalog/image/catalog/image/catalog/knifes/karambit-ruby/karambit-doppler-ruby-6-570x570-1000x1000.jpg",
+            "id": 6
+        },
+        {
+            "nombre": "Talon fade",
+            "precio": "3202",
+            "imagen": "https://media.karousell.com/media/photos/products/2023/9/29/cs2csgo_talon_knife_fade_87_1695970652_a55bd93c_progressive",
+            "id": 7
+        },
+        {
+            "nombre": "Talon blue gem",
+            "precio": "40000",
+            "imagen": "https://preview.redd.it/valve-must-have-turned-on-a-returning-player-buff-for-drops-v0-vs0gbsn067rb1.png?auto=webp&s=a9737a464fbaf137bbc2d70c494424d0f225b7e8",
+            "id": 8
         }
     ]
 }

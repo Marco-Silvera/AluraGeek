@@ -23,6 +23,36 @@ async function enviarProducto(nombre, precio, imagen) {
     return conexionConvertida;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+async function eliminarProducto(id) {
+    try {
+        await fetch(`http://localhost:3001/productos/${id}`, {
+            method: 'DELETE'
+        });
+    } catch (error) {
+        console.error('Error al eliminar el producto del servidor:', error);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 export const conexionAPI = {
-    listarProductos, enviarProducto
+    listarProductos, enviarProducto, eliminarProducto
 }
