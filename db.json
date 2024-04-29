@@ -41,6 +41,12 @@
       "precio": "21324",
       "imagen": "https://knify.gg/medias/2023/11/real-cs-talon-knife-slaughter-irl.webp",
       "id": 9
+    },
+    {
+      "nombre": "slaughter",
+      "precio": "12345",
+      "imagen": "https://knify.gg/medias/2023/11/real-cs-talon-knife-slaughter-irl.webp",
+      "id": 10
     }
   ]
 }

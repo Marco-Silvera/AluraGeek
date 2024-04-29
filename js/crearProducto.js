@@ -4,7 +4,7 @@ const formulario = document.querySelector('[data-formulario]')
 
 async function crearProducto(evento) {
 
-    // evento.preventDefault();
+    evento.preventDefault();
 
     // Obtenemos los valores de los inputs
     const nombre = document.querySelector('[data-nombre]').value;
@@ -13,7 +13,7 @@ async function crearProducto(evento) {
 
     await conexionAPI.enviarProducto(nombre, precio, imagen)
 
-    await listarProductos();
+    window.location.href = 'index.html';
 
     console.log("info enviada");
 }
