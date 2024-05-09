@@ -36,7 +36,7 @@ async function enviarProducto(nombre, precio, imagen) {
 
 async function eliminarProducto(id) {
     try {
-        await fetch(`https://my-json-server.typicode.com/marco-silvera/alurageek/productos?q=${id}`, {
+        await fetch(`https://my-json-server.typicode.com/marco-silvera/alurageek/productos/${id}`, {
             method: 'DELETE'
         });
     } catch (error) {
