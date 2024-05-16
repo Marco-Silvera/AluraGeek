@@ -1,14 +1,14 @@
 async function listarProductos() {
     // Establecemos donde va a buscar los productos
     // al usar fecth, por defecto realiza una petición: GET la cual retorna los elementos de la URL
-    const conexion = await fetch('http://localhost:3001/productos');
+    const conexion = await fetch('https://my-json-server.typicode.com/marco-silvera/alurageek/productos');
     const conexionConvertida = conexion.json();
 
     return conexionConvertida;
 }
 
 async function enviarProducto(nombre, precio, imagen) {
-    const conexion = await fetch('http://localhost:3001/productos', {
+    const conexion = await fetch('https://my-json-server.typicode.com/marco-silvera/alurageek/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ async function enviarProducto(nombre, precio, imagen) {
 
 async function eliminarProducto(id) {
     try {
-        await fetch(`http://localhost:3001/productos/${id}`, {
+        await fetch(`https://my-json-server.typicode.com/marco-silvera/alurageek/productos?id=${id}`, {
             method: 'DELETE'
         });
     } catch (error) {
