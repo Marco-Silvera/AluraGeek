@@ -1,14 +1,14 @@
 async function listarProductos() {
     // Establecemos donde va a buscar los productos
     // al usar fecth, por defecto realiza una petición: GET la cual retorna los elementos de la URL
-    const conexion = await fetch('https://my-json-server.typicode.com/marco-silvera/alurageek/productos');
+    const conexion = await fetch('https://fake-api-alura-geek-nu.vercel.app/productos');
     const conexionConvertida = conexion.json();
 
     return conexionConvertida;
 }
 
 async function enviarProducto(nombre, precio, imagen) {
-    const conexion = await fetch('https://my-json-server.typicode.com/marco-silvera/alurageek/productos', {
+    const conexion = await fetch('https://fake-api-alura-geek-nu.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ async function enviarProducto(nombre, precio, imagen) {
 
 async function eliminarProducto(id) {
     try {
-        await fetch(`https://my-json-server.typicode.com/marco-silvera/alurageek/productos?id=${id}`, {
+        await fetch(`https://fake-api-alura-geek-nu.vercel.app/productos?id=${id}`, {
             method: 'DELETE'
         });
     } catch (error) {
