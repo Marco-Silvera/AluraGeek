@@ -40,14 +40,16 @@ listarProductos();
 
 async function eliminarProducto(id) {
     try {
+
+        // Eliminar producto del archivo db.json
+        await conexionAPI.eliminarProducto(id);
+
+
         // Eliminar producto visualmente
         const productoAEliminar = document.querySelector(`[data-id="${id}"]`);
         if (productoAEliminar) {
             productoAEliminar.remove();
         }
-
-        // Eliminar producto del archivo db.json
-        await conexionAPI.eliminarProducto(id);
     } catch (error) {
         console.error('Error al eliminar el producto:', error);
     }
